@@ -1,0 +1,8 @@
+<h3>Top Heros</h3>
+<div class="container">
+  <a *ngFor="let content of names" routerLink="/detail/{{content.id}}">
+    <div class="content" >
+    <h3 class="innerText">{{content.name|uppercase}}</h3>
+  </div>
+  </a>
+</div>
